@@ -97,14 +97,14 @@ positionFond1.x = 0;
         printf("FAIL AUDIO %s\n",Mix_GetError());
     }
     Mix_Music *music;
-    music=Mix_LoadMUS("mainmenu.mp3");
+    music=Mix_LoadMUS("media/mainmenu.mp3");
     Mix_PlayMusic(music,-1);
 
 // son lors du click
 
     Mix_Volume(1, MIX_MAX_VOLUME/2);
     Mix_Chunk *son;
-    son = Mix_LoadWAV("mouseclick.wav");
+    son = Mix_LoadWAV("media/mouseclick.wav");
     Mix_VolumeChunk(son, MIX_MAX_VOLUME/2);
 
 
